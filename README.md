@@ -40,8 +40,8 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-1. Winning Game (With Speed Increasing) Gif of last 30 Seconds
-![](https://media.giphy.com/media/tTwh8Sbf60LQ5E5gB1/giphy.gif)
+1. Winning Game (With Speed Increasing) Last Round Only
+![](https://media.giphy.com/media/G2LcndVSHRwXgTIzNY/giphy.gif)
 
 2. Button Behaviors With Start and Stop Toggle Feature
 ![](https://media.giphy.com/media/q8oenCQJNoYTaIt4W3/giphy.gif)
