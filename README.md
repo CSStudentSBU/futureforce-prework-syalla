@@ -41,7 +41,7 @@ The following **additional** features are implemented:
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 1. Winning Game (With Speed Increasing) Gif of last 30 Seconds
-![](https://media.giphy.com/media/vwnHqGNUELF9ce0JqG/giphy.gif)
+![](https://media.giphy.com/media/tTwh8Sbf60LQ5E5gB1/giphy.gif)
 
 2. Button Behaviors With Start and Stop Toggle Feature
 ![](https://media.giphy.com/media/q8oenCQJNoYTaIt4W3/giphy.gif)
@@ -50,7 +50,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ![](https://media.giphy.com/media/D299eHyl1kTs12cpsH/giphy.gif)
 
 4. Lose Game due to Timeout (Changed timer to 15 seconds for GIF)
-![](https://media.giphy.com/media/QJyeAUVmXFMXQMCism/giphy.gif)
+![](https://media.giphy.com/media/JHm8g36WrjpKaeSoR7/giphy.gif)
 
 5. Lose Game due to Mistakes (Changed timer to 15 seconds for GIF)
 ![](https://media.giphy.com/media/KsTSxZFfDtrkeRPCHx/giphy.gif)
