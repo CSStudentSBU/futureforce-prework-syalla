@@ -1,0 +1,124 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+   background-color: black;
+    color: white; 
+}
+h1{
+  font-family: 'Brush Script MT', cursive; 
+  font-size: 50px;
+}
+img {
+  display: inline-block;
+}
+button{
+  
+  padding: 15px;
+  border-radius: 10px;
+  width:60px;
+60px;
+  
+}
+p1{
+  background-color: gold;
+  color: black;
+  font-size:25px;
+  border-radius: 10px;
+  
+}
+.hidden {
+  display: none;
+}
+
+progress {
+  width: 240px;
+  height: 25px;
+  border-radius: 20px;
+}
+
+#gameButtonArea > button 
+{
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+  
+  padding: 50px 50px;
+  
+  transform: translateY(-4px);
+  
+}
+#button1 {
+    background: red;
+}
+#button2 {
+    background: orange;
+}
+#button3 {
+    background: yellow;
+}
+#button4 {
+    background: lightgreen;
+}
+#button5 {
+    background: lightblue;
+}
+#button6 {
+    background: violet;
+}
+#button7 {
+    background: grey;
+}
+#button8 {
+    background: white;
+    
+}
+#button1:active, #button1.lit {
+    background: url(https://cdn.glitch.global/9d50c703-678d-491c-b69e-1792c5244193/red.jpg?v=1649538927141);
+}
+#button2:active, #button2.lit  {
+    background: url(https://cdn.glitch.global/9d50c703-678d-491c-b69e-1792c5244193/orange%20main.webp?v=1649538896085);
+}
+#button3:active, #button3.lit {
+    background: url(https://cdn.glitch.global/9d50c703-678d-491c-b69e-1792c5244193/orange1.jpg?v=1649538899155);
+}
+#button4:active, #button4.lit {
+  background: url(https://cdn.glitch.global/9d50c703-678d-491c-b69e-1792c5244193/green.webp?v=1649538892056);
+}
+
+#button5:active, #button5.lit {
+    background: url(https://cdn.glitch.global/9d50c703-678d-491c-b69e-1792c5244193/blue.webp?v=1649538889109);
+}
+#button6:active, #button6.lit {
+    background: url(https://cdn.glitch.global/9d50c703-678d-491c-b69e-1792c5244193/purple.webp?v=1649538939296);
+}
+#button7:active, #button7.lit {
+    background: url(https://cdn.glitch.global/9d50c703-678d-491c-b69e-1792c5244193/scar.jpg?v=1649538933747);
+}
+#button8:active, #button8.lit {
+  background: url(https://cdn.glitch.global/9d50c703-678d-491c-b69e-1792c5244193/character_bighero6_baymax_5aa275.webp?v=1649798623990);
+  
+}
+
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}  height:4
+  max-width: 100%;
+}
