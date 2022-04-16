@@ -40,19 +40,26 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
+
 1. Winning Game (With Speed Increasing) Last Round Only
+
 ![](https://media.giphy.com/media/G2LcndVSHRwXgTIzNY/giphy.gif)
 
 2. Button Behaviors With Start and Stop Toggle Feature
+
 ![](https://media.giphy.com/media/q8oenCQJNoYTaIt4W3/giphy.gif)
 
+
 3. Random Pattern Feauture (Refreshing the page and a new pattern appears)
+
 ![](https://media.giphy.com/media/D299eHyl1kTs12cpsH/giphy.gif)
 
 4. Lose Game due to Timeout (Changed timer to 15 seconds for GIF)
+
 ![](https://media.giphy.com/media/JHm8g36WrjpKaeSoR7/giphy.gif)
 
 5. Lose Game due to Mistakes (Changed timer to 15 seconds for GIF)
+
 ![](https://media.giphy.com/media/KsTSxZFfDtrkeRPCHx/giphy.gif)
 
 
