@@ -6,7 +6,7 @@ Submitted by: **Sadashiva Yalla**
 
 Time spent: **10** hours spent in total
 
-Link to project: (https://glitch.com/edit/#!/nervous-excellent-cod)
+Link to project: (insert your link here, should start with https://glitch.com...)
 
 ## Required Functionality
 
@@ -45,26 +45,13 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-<<<<<<< glitch
 1. Winning Game (With Speed Increasing) Gif of last 30 Seconds
 ![](https://media.giphy.com/media/nG78dPTK5wObxMvJlz/giphy.gif)
 
 2. Start and Stop Toggle Feature + Themes + Input Screens
 ![](https://media.giphy.com/media/7JeJX2Eo2gBjZubYEY/giphy.gif)
-=======
-
-1. Winning Game (With Speed Increasing) Last Round Only
-
-![](https://media.giphy.com/media/G2LcndVSHRwXgTIzNY/giphy.gif)
-
-2. Button Behaviors With Start and Stop Toggle Feature
-
-![](https://media.giphy.com/media/q8oenCQJNoYTaIt4W3/giphy.gif)
->>>>>>> main
-
 
 3. Random Pattern Feauture (Refreshing the page and a new pattern appears)
-<<<<<<< glitch
 ![](https://media.giphy.com/media/8tJnepsckEzwCuLh8r/giphy.gif)
 
 4. Lose Game due to Timeout 
@@ -72,18 +59,6 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 5. Lose Game due to Mistakes 
 ![](https://media.giphy.com/media/xF5GstkpX5tuldrsxa/giphy.gif)
-=======
-
-![](https://media.giphy.com/media/D299eHyl1kTs12cpsH/giphy.gif)
-
-4. Lose Game due to Timeout (Changed timer to 15 seconds for GIF)
-
-![](https://media.giphy.com/media/JHm8g36WrjpKaeSoR7/giphy.gif)
-
-5. Lose Game due to Mistakes (Changed timer to 15 seconds for GIF)
-
-![](https://media.giphy.com/media/KsTSxZFfDtrkeRPCHx/giphy.gif)
->>>>>>> main
 
 
 
