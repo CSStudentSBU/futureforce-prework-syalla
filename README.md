@@ -46,18 +46,23 @@ The following **additional** features are implemented:
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 1. Winning Game (With Speed Increasing) Gif of last 30 Seconds
+
 ![](https://media.giphy.com/media/nG78dPTK5wObxMvJlz/giphy.gif)
 
 2. Start and Stop Toggle Feature + Themes + Input Screens
+
 ![](https://media.giphy.com/media/7JeJX2Eo2gBjZubYEY/giphy.gif)
 
 3. Random Pattern Feauture (Refreshing the page and a new pattern appears)
+
 ![](https://media.giphy.com/media/8tJnepsckEzwCuLh8r/giphy.gif)
 
 4. Lose Game due to Timeout 
+
 ![](https://media.giphy.com/media/WbAl9sDslccLIO7or9/giphy.gif)
 
 5. Lose Game due to Mistakes 
+
 ![](https://media.giphy.com/media/xF5GstkpX5tuldrsxa/giphy.gif)
 
 
@@ -65,21 +70,23 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
 
-Overall I was able to get by with the guide given for the basic template of the game. However, as I did all of the optional steps and some more, I had to refer to some online resources. I was able to add more than 4 buttons, implement a random secret pattern, speed the game up, customize the buttons and give the player 3 strikes fairly easily. I did use online  resources such as Youtube, stackOverflow and Geeks for Geeks to get the ticking clock feature working as I had some difficulty with it. 
+Overall I was able to get by with the guide given for the basic template of the game. However, as I did all of the optional steps and some more, I had to refer to some online resources. I was able to add more than 4 buttons, implement a random secret pattern, speed the game up, customize the buttons and give the player 3 strikes fairly easily. I did use online  resources such as Youtube, stackOverflow and Geeks for Geeks to get the ticking clock feature and the sound portion working as I had some difficulty with it. I also used google images for the button images and theme images.
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 
-The biggest challenge I faced with this pre-work was finishing up the countdown portion. It initially took me a while to understand the setInterval and clearInterval functions. It took me even more time to implement them. I came across so many errors while doing this bit. I overcame it by referring to online resources such as youtube, geeks for geeks, and StackOverflow. The rest of the project took approximately 2 hours and this portion took me 3 hours. I finally was able to create a solution that worked and stopped the game once the time was up and then restarted once you hit start again. I wanted to go even more overboard and add a progress bar to the project, which did not take too long.  If I had more time I would have made the progress bar even better and more visually appealing, however, I did my best to limit myself to the 5-hour limit so it would be a fair judgment. 
-So to summarize, I am proud of being able to implement the clock feature because I never gave up each time I failed. I tried my best to fix the issue by thinking of out-of-the-box solutions along with referring to outside resources to help and guide me. For example, I initially did not know the second parameter for both methods was in milliseconds or how to make the timer restart once I hit the stop/start button. If I did not check on Youtube and Geeks for Geeks and StackOverflow for tips, I think it would have been much more difficult to finish the timer portion within the time limit as they were really helpful.
+The biggest challenge I faced with this pre-work was finishing up the countdown portion and doing the sound portion. The countdown portion initially took me a while to understand. The setInterval and clearInterval functions tripped me up for a couple of minutes but I understood them eventually. It took me a good amount of time to implement them, however. I came across so many errors while doing this bit. I overcame it by referring to online resources such as youtube, geeks for geeks, and StackOverflow. I finally was able to create a solution that, worked and stopped the game once the time was up and then restarted once you hit start again. I wanted to go even more overboard and add a progress bar to the project, which did not take too long.  If I had more time I would have made the progress bar even better and more visually appealing. I had a similar situation with the sound portion as well. I got the audio tags and the audio to work, but the real trouble came when I was replacing the previous sound frequency map with the new sounds. I failed countless times and I finally got it to work after rewriting a bunch of functions in the program. I also had trouble making the sound stop but I found a solution for that quickly. 
+So to summarize, I am proud of being able to implement the clock feature and the sound feature because I never gave up each time I failed. I tried my best to fix the issue by thinking of out-of-the-box solutions along with referring to outside resources to help and guide me.
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 
-I had a few questions about web development after completing my submission. One of them was how efficient would HTML and CSS be in creating the front end for a big website? I had this question because I imagine as the number of elements and complexity in a website increases wouldn’t the difficulty to update/edit also increase tremendously? How would you manage between so many elements in a big website front end, any tips? I also had one last question which was, How massively would web development change with the rise of web 3.0?
+I had a few questions about web development after completing my submission. One of them was how efficient would HTML and CSS be in creating the front end for a big website? I had this question because I imagine as the number of elements and complexity in a website increases wouldn’t the difficulty to update/edit also increase tremendously? 
+I also had a question on how all this data could be stored? Websites nowadays also have to store data in a server in the cloud or a personal server, what is the best way of accomplishing that? How can we keep the data in the website secure? Are there any important principles followed that would help in creating a website?
+How would you manage between so many elements in a big website front end, any tips? I also had one last question which was, How massively would web development change with the rise of web 3.0?
 
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
 
-If I had a few more hours to work on this project, I would mainly try to get the progress bar to be more efficient, make my website more visually appealing to the eyes, create 3d buttons with custom sounds that change according to the theme. I also would have wanted to make my javascript functions more optimized and give the user more control over the game settings like how many buttons the can use, how many values the secret pattern has to be, and maybe even add a volume slider. I honestly would love to spend more time on this project and make it a lot more fancy as I had a great time doing it.
+If I had a few more hours to work on this project, I would mainly try to get the progress bar to be more efficient, make my website more visually appealing to the eyes, create 3d buttons with custom sounds that change according to the theme. I would also like it if I could make the pokemon in the buttons change along with the theme. I also would have wanted to make my javascript functions more optimized and give the user more control over the game settings like how many buttons they can use, how many values the secret pattern can be, and maybe even add a volume slider. I honestly would love to spend more time on this project and make it a lot more fancy as I had a great time doing it.
 
 
 
