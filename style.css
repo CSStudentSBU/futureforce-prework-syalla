@@ -1,42 +1,55 @@
 /* a minimalist set of CSS resets */
 
 /* default to border-box */
+
+@import url(//db.onlinewebfonts.com/c/f4d1593471d222ddebd973210265762a?family=Pokemon);
+
+@font-face {font-family: "Pokemon"; src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot"); src: url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.woff") format("woff"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/f4d1593471d222ddebd973210265762a.svg#Pokemon") format("svg"); }
 html {
   box-sizing: border-box;
-  font-size: 16px;
+  font-size: 40px;
+    color: yellow;
+
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
+
 /* adjust typography defaults */
 body {
   margin: 1rem;
-  font-family: sans-serif;
+  font-family: "Pokemon",sans-serif;
   line-height: 1.5;
-   background-color: black;
-    color: white; 
+  background-image: url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/1644604.jpg?v=1650673476597');
+  background-color: black;
+  background-size: cover;                    
+  background-repeat:   no-repeat;
+  background-position: center center; 
 }
 h1{
-  font-family: 'Brush Script MT', cursive; 
-  font-size: 50px;
+  font-family: "Pokemon",sans-serif;
+  color: yellow;
+  font-size: 75px;
 }
 img {
   display: inline-block;
 }
+
 button{
-  
+  font-family: "Pokemon",sans-serif;
+    font-size: 30px;
+
   padding: 15px;
   border-radius: 10px;
-  width:60px;
-60px;
-  
+  border-width: thick;
+  border-color: gold;
 }
 p1{
   background-color: gold;
   color: black;
-  font-size:25px;
+  font-size:30px;
   border-radius: 10px;
   
 }
@@ -45,9 +58,9 @@ p1{
 }
 
 progress {
-  width: 240px;
-  height: 25px;
-  border-radius: 20px;
+  width: 500px;
+  height: 40px;
+  border-radius: 50px;
 }
 
 #gameButtonArea > button 
@@ -62,63 +75,55 @@ progress {
   
 }
 #button1 {
-    background: red;
+  background: url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/file-pokeball-png-0%20(4).png?v=1650650259167')
 }
 #button2 {
-    background: orange;
+  background: url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/file-pokeball-png-0%20(4).png?v=1650650259167')
 }
 #button3 {
-    background: yellow;
+  background: url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/file-pokeball-png-0%20(4).png?v=1650650259167')
 }
 #button4 {
-    background: lightgreen;
+  background: url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/file-pokeball-png-0%20(4).png?v=1650650259167')
 }
 #button5 {
-    background: lightblue;
+  background: url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/file-pokeball-png-0%20(4).png?v=1650650259167')
 }
 #button6 {
-    background: violet;
+  background: url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/file-pokeball-png-0%20(4).png?v=1650650259167')
 }
 #button7 {
-    background: grey;
+  background: url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/file-pokeball-png-0%20(4).png?v=1650650259167')
 }
 #button8 {
-    background: white;
+  background: url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/file-pokeball-png-0%20(4).png?v=1650650259167')
     
 }
+
 #button1:active, #button1.lit {
-    background: url(https://cdn.glitch.global/9d50c703-678d-491c-b69e-1792c5244193/red.jpg?v=1649538927141);
+    background: url(https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/pokemon-pikachu-neon-i71936.jpg?v=1650687110834);
 }
+
 #button2:active, #button2.lit  {
-    background: url(https://cdn.glitch.global/9d50c703-678d-491c-b69e-1792c5244193/orange%20main.webp?v=1649538896085);
+    background: url(https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/Featured-Pokemon-Is-charmander-i.png?v=1650694121018);
 }
 #button3:active, #button3.lit {
-    background: url(https://cdn.glitch.global/9d50c703-678d-491c-b69e-1792c5244193/orange1.jpg?v=1649538899155);
+    background: url(https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/Pokemon-Go-Squirtle-Spotlight-Ho.png?v=1650687940334);
+}
+#button5:active, #button5.lit {
+  background: url(https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/41028.png?v=1650691592242);
+}
+
+#button6:active, #button6.lit {
+    background: url(https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/pokemon-jigglypuff-0x200.png?v=1650695044018);
 }
 #button4:active, #button4.lit {
-  background: url(https://cdn.glitch.global/9d50c703-678d-491c-b69e-1792c5244193/green.webp?v=1649538892056);
-}
-
-#button5:active, #button5.lit {
-    background: url(https://cdn.glitch.global/9d50c703-678d-491c-b69e-1792c5244193/blue.webp?v=1649538889109);
-}
-#button6:active, #button6.lit {
-    background: url(https://cdn.glitch.global/9d50c703-678d-491c-b69e-1792c5244193/purple.webp?v=1649538939296);
+    background: url(https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/bulbasaur-terrarium.png?v=1650694116796);
 }
 #button7:active, #button7.lit {
-    background: url(https://cdn.glitch.global/9d50c703-678d-491c-b69e-1792c5244193/scar.jpg?v=1649538933747);
+    background: url(https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/eGd0IS.png?v=1650692741439);
 }
 #button8:active, #button8.lit {
-  background: url(https://cdn.glitch.global/9d50c703-678d-491c-b69e-1792c5244193/character_bighero6_baymax_5aa275.webp?v=1649798623990);
+  background: url(https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/mew_minimalist_wallpaper_by_drag.png?v=1650692744620);
   
-}
-
-
-/* images and videos max out at full width */
-img,
-video {
-  height: auto;
-  max-width: 100%;
-}  height:4
-  max-width: 100%;
 }

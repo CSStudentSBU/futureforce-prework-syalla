@@ -4,7 +4,7 @@
 
 Submitted by: **Sadashiva Yalla**
 
-Time spent: **5** hours spent in total
+Time spent: **10** hours spent in total
 
 Link to project: (insert your link here, should start with https://glitch.com...)
 
@@ -25,35 +25,40 @@ The following **optional** features are implemented:
 * [x] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
 * [x] Buttons use a pitch (frequency) other than the ones in the tutorial
 * [x] More than 4 functional game buttons
-* [x] Playback speeds up on each turn
+* [x] Playback speeds up on each turn//(I Initially had this but to make it possible to hear the pokemon cry I disabled it)
 * [x] Computer picks a different pattern each time the game is played
 * [x] Player only loses after 3 mistakes (instead of on the first mistake)
 * [x] Game button appearance change goes beyond color (e.g. add an image)
-* [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
+* [x] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 * [x] User has a limited amount of time to enter their guess on each turn
 
 The following **additional** features are implemented:
 
 - List anything else that you can get done to improve the app!
 - [x] Added a progress bar synced to the timer
+- [x] Added a pokemon theme for each region
+- [x] Added custom Pokemon fonts 
+- [x] Added custom pokemon noises
+- [x] Added an input mistakes screen
+- [x] Added an input timer screen
 
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 1. Winning Game (With Speed Increasing) Gif of last 30 Seconds
-![](https://media.giphy.com/media/vwnHqGNUELF9ce0JqG/giphy.gif)
+![](https://media.giphy.com/media/nG78dPTK5wObxMvJlz/giphy.gif)
 
-2. Button Behaviors With Start and Stop Toggle Feature
-![](https://media.giphy.com/media/q8oenCQJNoYTaIt4W3/giphy.gif)
+2. Start and Stop Toggle Feature + Themes + Input Screens
+![](https://media.giphy.com/media/7JeJX2Eo2gBjZubYEY/giphy.gif)
 
 3. Random Pattern Feauture (Refreshing the page and a new pattern appears)
-![](https://media.giphy.com/media/D299eHyl1kTs12cpsH/giphy.gif)
+![](https://media.giphy.com/media/8tJnepsckEzwCuLh8r/giphy.gif)
 
-4. Lose Game due to Timeout (Changed timer to 15 seconds for GIF)
-![](https://media.giphy.com/media/QJyeAUVmXFMXQMCism/giphy.gif)
+4. Lose Game due to Timeout 
+![](https://media.giphy.com/media/WbAl9sDslccLIO7or9/giphy.gif)
 
-5. Lose Game due to Mistakes (Changed timer to 15 seconds for GIF)
-![](https://media.giphy.com/media/KsTSxZFfDtrkeRPCHx/giphy.gif)
+5. Lose Game due to Mistakes 
+![](https://media.giphy.com/media/xF5GstkpX5tuldrsxa/giphy.gif)
 
 
 
@@ -74,7 +79,7 @@ I had a few questions about web development after completing my submission. One 
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
 
-If I had a few more hours to work on this project, I would mainly try to get the progress bar to be more efficient, make my website more visually appealing to the eyes, create 3d buttons with custom sounds as well as add custom imported fonts. I also would have wanted to make my javascript functions more optimized and maybe even give the user some control over the game settings like how many mistakes they want to make, how many values the secret pattern has to be, and maybe even the theme of images for the buttons. I honestly would love to spend more time on this project and make it a lot more fancy as I had a great time doing it.
+If I had a few more hours to work on this project, I would mainly try to get the progress bar to be more efficient, make my website more visually appealing to the eyes, create 3d buttons with custom sounds that change according to the theme. I also would have wanted to make my javascript functions more optimized and give the user more control over the game settings like how many buttons the can use, how many values the secret pattern has to be, and maybe even add a volume slider. I honestly would love to spend more time on this project and make it a lot more fancy as I had a great time doing it.
 
 
 

@@ -1,30 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+                
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
 
-    <title>Hello world!</title>
+    <title>Prework Syalla</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
+     <link href="http://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
 
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
   <body>
     <!-- this is the start of content -->
+  <div align = "center" id ="themeArea">
+    <button id = "main">Main</button>
+    <button id = "kanto">Kanto</button>
+    <button id = "johto">Johto</button>
+    <button id = "hoenn">Hoenn</button>
+    <button id = "sinnoh">Sinnoh</button>
+    <button id = "unova">Unova</button>
+    <button id = "kalos">Kalos</button>
+    <button id = "alola">Alola</button>
+    <script src="script.js"></script>
+  </div>
     
-    <h1>
-      Light and Sound Memory Game
-      (Disney Edition)!
+    
+    <h1 align = "center">
+      Pokemon Sound Memory Game
     </h1>
-    <p>
-    Welcome to the Light and Sound game, here your senses and memory will be tested and pushed to the limits!
-    Repeat the patterns you hear by pressing the button that corresponds to the sound. 
-    REMEBER: THE CLUES WILL BECOME FASTER AS YOU GO!!!
-    Good Luck!
+    <p id = "poke" align = "center">
+    Welcome to the Pokemon World!
     </p>
     
     <div align = "center">
@@ -34,20 +44,38 @@
     
     
     <div align="center">
-    <progress  value="0" max="120" id="progressBar"></progress>
+    <progress  value="0" id="progressBar"></progress>
     <p1  id="countdown"></p1>
     </div>
     
-    <div id="gameButtonArea">
+    <div align = "center" id="gameButtonArea">    
+      
+    <audio src="https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/pikachump3.mp3?v=1650694312479" id="audio1"></audio>
     <button id = "button1" onclick = "guess(1)" onmousedown ="startTone(1)" onmouseup="stopTone()"></button>
-    <button id = "button2" onclick = "guess(2)" onmousedown ="startTone(2)" onmouseup="stopTone()"></button>
+      
+    <audio src="https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/charmander.mp3?v=1650694270353" id="audio2"></audio>
+    <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone(2)"></button> 
+    
+    <audio src="https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/squirtle.mp3?v=1650694324154" id="audio3"></audio>  
     <button id = "button3" onclick = "guess(3)" onmousedown ="startTone(3)" onmouseup="stopTone()"></button>
+   
+    <audio src= "https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/bulbasaur.mp3?v=1650694304051" id="audio4"></audio>
     <button id = "button4" onclick = "guess(4)" onmousedown ="startTone(4)" onmouseup="stopTone()"></button>
+          
+    <audio src="https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/eevee.mp3?v=1650694330358" id="audio5"></audio>
     <button id = "button5" onclick = "guess(5)" onmousedown ="startTone(5)" onmouseup="stopTone()"></button>
+    
+    <audio src="https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/yt5s%20(mp3cut.net).mp3?v=1650695015560" id="audio6"></audio>
     <button id = "button6" onclick = "guess(6)" onmousedown ="startTone(6)" onmouseup="stopTone()"></button>
+    
+    <audio src="https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/alakazam.mp3?v=1650694287276" id="audio7"></audio>
     <button id = "button7" onclick = "guess(7)" onmousedown ="startTone(7)" onmouseup="stopTone()"></button>
+    
+    <audio src="https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/mewnew.mp3?v=1650694333907" id="audio8"></audio>
     <button id = "button8" onclick = "guess(8)" onmousedown ="startTone(8)" onmouseup="stopTone()"></button>
       
     </div>
   </body>
 </html>
+
+ 
