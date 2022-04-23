@@ -94,7 +94,7 @@ If I had a few more hours to work on this project, I would mainly try to get the
 ## Interview Recording URL Link
 
 [My 5-minute Interview Recording]
-(https://www.youtube.com/watch?v=P3C1u9q1T3E)
+(https://youtu.be/-m2P_gDzEkQ)
 
 
 ## License
