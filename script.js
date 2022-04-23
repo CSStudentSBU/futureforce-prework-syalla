@@ -1,20 +1,26 @@
 const cluePauseTime = 333; 
 const nextClueWaitTime = 1000; 
 var pattern = [Math.floor(Math.random() * 8)+1, Math.floor(Math.random() * 8)+1, Math.floor(Math.random() * 8)+1, Math.floor(Math.random() * 8)+1, Math.floor(Math.random() * 8)+1, Math.floor(Math.random() * 8)+1, Math.floor(Math.random() * 8)+1, Math.floor(Math.random() * 8)+1];
-var clueHoldTime = 1000; 
+var clueHoldTime = 3000; 
 var progress = 0; 
 var gamePlaying = false;
 var tonePlaying = false;
 var volume = 0.5;  
 var guessCounter = 0;
 var mistakes=0;
-var counter = 120;
 var progressbar;
+var mistakeInp=0;
+var time=0;
+var counter = 0;
 
 function startGame()
 {
+  mistakeInp = window.prompt("How Many Lives Do You Desire? ");
+  time = window.prompt("How Many Seconds Do You Desire? "); 
+  document.getElementById("progressBar").max = time;
+  counter = time;
   clueHoldTime =1000;
-  progressbar = 120;
+  progressbar = time;
   var changeTimer = setInterval(function() 
   {
   if(counter <= 0)
@@ -22,7 +28,7 @@ function startGame()
     clearInterval(changeTimer);
     document.getElementById("countdown").innerHTML = "Times Up!";
     timesUP();
-    counter = 120;
+    counter = time;
     progressbar =0;
   } 
   else 
@@ -39,7 +45,7 @@ function startGame()
   {
     clearInterval(progressbar);
   }
-  document.getElementById("progressBar").value =  120 - progressbar;
+  document.getElementById("progressBar").value =  time - progressbar;
   progressbar -= 1;}, 1000);
   
   mistakes = 0;
@@ -50,44 +56,41 @@ function startGame()
   playClueSequence();
 }
 function stopGame(){
+  
     counter = 0;
     gamePlaying = false;
     document.getElementById("stopBtn").classList.add("hidden");
     document.getElementById("startBtn").classList.remove("hidden");
     
 }
-const freqMap = {
-  1: 261,
-  2: 329,
-  3: 392,
-  4: 466,
-  5: 990,
-  6: 670,
-  7: 777,
-  8: 444
-}
-function playTone(btn,len){ 
-  oscil.frequency.value = freqMap[btn]
-  gain.gain.setTargetAtTime(volume,context.currentTime + 0.05,0.025)
-  context.resume()
+
+
+function playTone(val,len){ 
+  context.resume();
+  startTone(val);
   tonePlaying = true
-  setTimeout(function(){
-    stopTone()
-  },len)
+  setTimeout(function(){stopTone(val)},len)
+  
+  
 }
-function startTone(btn){
-  if(!tonePlaying){
-    context.resume()
-    oscil.frequency.value = freqMap[btn]
-    gain.gain.setTargetAtTime(volume,context.currentTime + 0.05,0.025)
-    context.resume()
-    tonePlaying = true
+function startTone(val) {
+  if (!tonePlaying) {
+    context.resume();
+    var audio = document.getElementById('audio'+val).play();
+    context.resume();
+    tonePlaying = true;
+    
   }
 }
-function stopTone(){
-  gain.gain.setTargetAtTime(0,context.currentTime + 0.05,0.025)
-  tonePlaying = false
+function stopTone(val) {
+  
+  document.getElementById('audio'+val).pause();
+  document.getElementById('audio'+val).currentTime = 0;
+  //stack overflow helped here
+  tonePlaying = false;
+  
 }
+
 var AudioContext = window.AudioContext || window.webkitAudioContext 
 var context = new AudioContext()
 var oscil = context.createOscillator()
@@ -110,10 +113,10 @@ function timesUP(){
   alert("GAME OVER and Time is UP!");
 }
 function mistake(){
-  alert("Mistake 1 Made, Only 2 left, be careful");
-}
-function mistake2(){
-  alert("Mistake 2 Made, Only 1 left, be careful");
+  
+  var magic = mistakeInp-mistakes;
+  alert(magic+ " Lives Left!");
+  
 }
 function lightButton(btn){
   document.getElementById("button"+btn).classList.add("lit")
@@ -137,11 +140,12 @@ function playClueSequence(){
     setTimeout(playSingleClue,delay,pattern[i]) 
     delay += clueHoldTime 
     delay += cluePauseTime;
-    clueHoldTime -= 25;
+    //clueHoldTime -= 25;//increase speed
   }
 }
 function guess(btn)
 {
+  
   console.log("user guessed: " + btn);
   if(!gamePlaying)
   {
@@ -168,17 +172,78 @@ function guess(btn)
   }else
   {
     mistakes = mistakes+1;
-    if(mistakes==1)
+    if(mistakeInp-mistakes >0)
       {
-         mistake();
+        mistake();
       }
-    if(mistakes==2)
-      {
-         mistake2();
-      }
-    if(mistakes ==3)
+    if(mistakeInp-mistakes ==0)
+      
       {
         loseGame();
       }
   }
-}    
+}   
+
+
+
+const btn2 = document.getElementById("johto");
+btn2.addEventListener('click', function onClick(event) {
+document.body.style.backgroundImage = "url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/lugia_by_suspiciousbiscotti_d870iwo-fullview.jpg?v=1650673357989')";
+//document.getElementsByTagName('H1')[0] = 'white';
+  //document.body.style.color = 'white';
+  document.getElementById("poke").innerHTML = "Welcome to the Johto Region!";
+});
+
+const btn = document.getElementById("kanto");
+btn.addEventListener('click', function onClick(event) {
+document.body.style.backgroundImage = "url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/kanto.jpg?v=1650671673462')";
+//document.getElementsByTagName('H1')[0] = 'white';
+  //document.body.style.color = 'white';
+  document.getElementById("poke").innerHTML = "Welcome to the Kanto Region!";
+});
+
+const btn3 = document.getElementById("hoenn");
+btn3.addEventListener('click', function onClick(event) {
+document.body.style.backgroundImage = "url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/355936.png?v=1650652412062')";
+//document.getElementsByTagName('H1')[0] = 'white';
+  //document.body.style.color = 'white';
+  document.getElementById("poke").innerHTML = "Welcome to the Hoenn Region!";
+});
+
+
+const btn4 = document.getElementById("sinnoh");
+btn4.addEventListener('click', function onClick(event) {
+document.body.style.backgroundImage = "url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/327-3278232_minimalist-pokemon-giratina.png?v=1650672550346')";
+//document.getElementsByTagName('H1')[0] = 'white';
+  //document.body.style.color = 'white';
+  document.getElementById("poke").innerHTML = "Welcome to the Sinnoh Region!";
+});
+
+const btn5 = document.getElementById("unova");
+btn5.addEventListener('click', function onClick(event) {
+document.body.style.backgroundImage = "url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/149-1499524_zekrom-wallpapers-new-zekrom-wallpapers-minimalist-kyurem.jpg?v=1650673331482')";
+//document.getElementsByTagName('H1')[0] = 'white';
+  //document.body.style.color = 'white';
+  document.getElementById("poke").innerHTML = "Welcome to the Unova Region!";
+});
+
+const btn6 = document.getElementById("kalos");
+btn6.addEventListener('click', function onClick(event) {
+document.body.style.backgroundImage = "url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/666572.png?v=1650672795736')";
+//document.getElementsByTagName('H1')[0] = 'white';
+  //document.body.style.color = 'white';
+  document.getElementById("poke").innerHTML = "Welcome to the Kalos Region!";
+});
+
+const btn7 = document.getElementById("alola");
+btn7.addEventListener('click', function onClick(event) {
+document.body.style.backgroundImage = "url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/da4ygey-b0d6748a-7fdf-4571-95a9-f10eeab2ee9a.png?v=1650673030718')";
+//document.getElementsByTagName('H1')[0] = 'white';
+  //document.body.style.color = 'white';
+  document.getElementById("poke").innerHTML = "Welcome to the Alola Region!";
+});
+const btn8 = document.getElementById("main");
+btn8.addEventListener('click', function onClick(event) {
+document.body.style.backgroundImage = "url('https://cdn.glitch.global/8a51aeb1-5312-4765-8445-5135d1f5fcdc/1644604.jpg?v=1650673476597')";
+  document.getElementById("poke").innerHTML = "Welcome to the Pokemon World!";
+});
